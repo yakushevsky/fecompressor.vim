@@ -1,24 +1,13 @@
 # fecompressor.vim
 
 fecompressor.vim is designed to auto execute compressor programes while edit
-and saving files used in the front end. It supports js, css, less
-and scss. (Yes, I know less and scss are not compressor)
+and saving files used in the front end. It supports js, coffescript, css, less
+and scss.
 
 ## Feature
 
-- Support Compressors: UglifyJS, Closure Compiler, YUICompressor, LESS, Sass
-- Support File Type: css, js, less, scss
-
-## Install
-
-Goto [get][fecompile.vim] vimball file. Open it with vim and execute :so%
-or 
-
-    git clone git://github.com/othree/fecompressor.vim.git
-    cd fecompressor.vim
-    make install
-
-[fecompile.vim]:http://www.vim.org/scripts/script.php?script_id=3453
+- Support Compressors: UglifyJS, Closure Compiler, YUICompressor, LESS, Sass, CoffeeScript
+- Support File Type: css, js, less, scss, coffee
 
 ## Usage
 
@@ -30,6 +19,7 @@ check if the following command is available.
 - 'yuicompressor' for YUICompressor
 - 'lessc' for LESS
 - 'sass' for scss
+- 'coffee' for CoffeeScript
 
 Then it will do the following stuff for you.
 
@@ -37,6 +27,11 @@ For less and scss:
 
 1. Convert the file to css.
 2. Do stuffs for css file.
+
+For coffee:
+
+1. Convert the file to js.
+2. Do stuffs for js file.
 
 For css and js file:
 
